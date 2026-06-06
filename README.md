@@ -1,8 +1,5 @@
 <h1 align="center">Hey there &#x1F44B;, It's me Himeow.</h1>
-A tech enthusiast from Earth. I'm passionate about the science of perception and love exploring new tech ideas.
-In my free time, I dive into music, try crafting some designs, tinker with apps, or make random projects. It's all about exploring new ideas and having fun!
 
-<br/>
 
 <!--
 **himnastiq/himnastiq** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -20,11 +17,15 @@ Here are some ideas to get you started:
 -->
    
 <div align="center">
+   A tech enthusiast from Earth. I'm passionate about the science of perception and love exploring new tech ideas.
+In my free time, I dive into music, try crafting some designs, tinker with apps, or make random projects. It's all about exploring new ideas and having fun!
+
+<br/>
   <br/><br/>
   
    <a href="https://github.com/himnastiq">
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=himnastiq&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=himnastiq&layout=compact&langs_count=8&theme=dracula"/>
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=himnastiq&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=himnastiq&layout=compact&langs_count=8&theme=radical"/>
 <div>
   
   <picture>
