@@ -1,0 +1,57 @@
+# .github/workflows/update-stats.yml
+#
+# Runs generate-stats.js once a day (or on demand), commits the SVGs back
+# to the repo so your README can reference them directly.
+#
+# ─── One-time setup ───────────────────────────────────────────
+# 1. Go to https://github.com/settings/tokens/new
+# 2. Choose "Classic token"
+# 3. Tick scopes:  read:user   +   repo
+#    (repo scope is required so the API can count private-repo contributions)
+# 4. Click Generate → copy the token
+# 5. In your profile repo:  Settings → Secrets → Actions → New repository secret
+#    Name:  GH_TOKEN
+#    Value: paste your token
+# ──────────────────────────────────────────────────────────────
+
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: '0 0 3 * *'   
+  workflow_dispatch:        # also triggerable from the Actions tab manually
+
+permissions:
+  contents: write           # lets the job commit & push the SVG files
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # No npm install needed — generate-stats.js uses only built-in Node modules
+      # and Node 20's native fetch (no external dependencies).
+
+      - name: Generate stats cards
+        env:
+          GITHUB_USERNAME: himnastiq    # ← change this if you fork the script
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: node generate-stats.js
+
+      - name: Commit & push SVGs
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add github-stats.svg github-top-langs.svg
+          # Only commit if something actually changed
+          git diff --staged --quiet \
+            || git commit -m "chore: update GitHub stats [skip ci]"
+          git push
