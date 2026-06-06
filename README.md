@@ -1,4 +1,8 @@
-## Hi there 👋
+<h1 align="center">Hey there &#x1F44B;, It's me Himeow.</h1>
+A tech enthusiast from Earth. I'm passionate about the science of perception and love exploring new tech ideas.
+In my free time, I dive into music, try crafting some designs, tinker with apps, or make random projects. It's all about exploring new ideas and having fun!
+
+<br/>
 
 <!--
 **himnastiq/himnastiq** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,3 +18,27 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+   
+<div align="center">
+  <br/><br/>
+  
+   <a href="https://github.com/himnastiq">
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=himnastiq&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=himnastiq&layout=compact&langs_count=8&theme=dracula"/>
+<div>
+  
+  <picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
+  />
+  <img
+    alt="github contribution grid snake animation"
+    src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
+  />
+</picture>
+</div>
